@@ -1,8 +1,8 @@
 header{
-    height: var(--header-height);
-    background-color: var(--bg-cl);
+    background: var(--bg-cl);
     padding-top: 38px;
-    .container{
+    & > .container{
+        min-height: var(--header-height);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,6 +23,11 @@ header{
                     }
                 }
             }
+        }
+        .action{
+            display: flex;
+            align-items: center;
+            gap: 18px;
         }
     }
 }
