@@ -6,6 +6,7 @@
     --bg-cl: #E6F0FF;
     --container-width: 1140px;
     --header-height: 40px;
+    --section-pd: 40px;
 }
 html{
     font-size: 62.5%;
@@ -43,6 +44,16 @@ button{
         border-radius: 8px;
         background-color: var(--main-cl);
         color: var(--white-cl);
+        transition: .3s linear;
+        &:hover{
+            opacity: .8;
+            transform: scale(1.02);
+            transition: .3s linear;
+        }
+        &:active{
+            transform: scale(.98);
+            transition: .3s linear;
+        }
     }
     &.size-m{
         width: 170px;

@@ -197,6 +197,7 @@ template {
   --bg-cl: #E6F0FF;
   --container-width: 1140px;
   --header-height: 40px;
+  --section-pd: 40px;
 }
 
 html {
@@ -239,6 +240,16 @@ button.primary {
   border-radius: 8px;
   background-color: var(--main-cl);
   color: var(--white-cl);
+  transition: 0.3s linear;
+}
+button.primary:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+  transition: 0.3s linear;
+}
+button.primary:active {
+  transform: scale(0.98);
+  transition: 0.3s linear;
 }
 button.size-m {
   width: 170px;
