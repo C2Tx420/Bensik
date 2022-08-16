@@ -21,6 +21,13 @@
 
 @font-face {
     font-family: Poppins;
+    src: url('../fonts/Poppins-SemiBold.ttf');
+    font-weight: 600;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Poppins;
     src: url('../fonts/Poppins-Bold.ttf');
     font-weight: 700;
     font-display: fallback;

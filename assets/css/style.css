@@ -68,6 +68,12 @@ table {
 }
 @font-face {
   font-family: Poppins;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-display: fallback;
+}
+@font-face {
+  font-family: Poppins;
   src: url("../fonts/Poppins-Bold.ttf");
   font-weight: 700;
   font-display: fallback;
@@ -87,6 +93,7 @@ table {
   --main-text-cl: #000336;
   --text-cl: #5A6473;
   --bg-cl: #E6F0FF;
+  --link-cl: #0689FF;
   --container-width: 1140px;
   --header-height: 40px;
   --section-pd: 80px;
@@ -156,6 +163,11 @@ button.primary:active {
 button.size-m {
   width: 170px;
   padding: 17px 8px;
+}
+
+.link a {
+  color: var(--link-cl);
+  font-weight: 600;
 }
 
 header {
