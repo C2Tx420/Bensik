@@ -48,3 +48,51 @@
         }
     }
 }
+@media (max-width: 1599px){
+    .hero{ 
+        .container{
+            justify-content: unset;
+            gap:0;
+        }
+        &__left{
+            width: 50%;
+            &-content{
+                .heading{
+                    font-size: 5rem;
+                    line-height: 6rem;
+                }
+            }
+        }
+        &__right{
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .hero{
+        &__left{
+            margin-right: auto;
+            &-content{
+                .sub-heading{
+                    font-size: 1.6rem;
+                    line-height: 100%;
+                }
+                .heading{
+                    font-size: 3.4rem;
+                    line-height: 100%;
+                    margin: 10px 0 20px;
+                }
+                .sub{
+                    font-size: 1.4rem;
+                    line-height: 150%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__right{
+            width: 40%;
+            margin-right: 0;
+        }
+    }
+}

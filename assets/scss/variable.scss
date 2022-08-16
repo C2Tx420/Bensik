@@ -1,13 +1,14 @@
 :root{
     --black-cl: #000;
     --white-cl: #fff;
+    --blue-cl: #0689FF;
     --main-cl: #0F1B4C;
     --nav-text-cl: #4F5361;
     --sub-text-cl: #687690;
     --main-text-cl: #000336;
     --text-cl: #5A6473;
+    --heading-cl: #000339;
     --bg-cl: #E6F0FF;
-    --link-cl: #0689FF;
     --container-width: 1140px;
     --header-height: 40px;
     --section-pd: 80px;
@@ -53,10 +54,11 @@ button{
     font-weight: 500;
     font-family: Poppins;
 
+    border-radius: 8px;
+
     cursor: pointer;
     &.primary{
         width: 98px;
-        border-radius: 8px;
         background-color: var(--main-cl);
         color: var(--white-cl);
         transition: .3s linear;
@@ -78,7 +80,71 @@ button{
 
 .link{
     a{
-        color: var(--link-cl);
+        color: var(--blue-cl);
         font-weight: 600;
+        svg{
+            margin-left: 8px;
+        }
+    }
+}
+
+.content{
+    &::before{
+        content: '';
+        display: block;
+        height: 4px;
+        width: 41px;
+        background-color: var(--heading-cl);
+        border-radius: 12px;
+        margin: 0 auto 10px auto;
+    }
+    h3{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        font-weight: 600;
+        color: var(--heading-cl);
+    }
+    p{
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: var(--text-cl);
+
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1199px){
+    :root{
+        --container-width: 960px;
+    }
+}
+
+@media (max-width: 991px){
+    :root{
+        --container-width: 720px;
+        --section-pd: 50px;
+    }
+    button{
+        padding: 8px;
+
+        font-size: 1.2rem;
+        &.primary{
+            width: 80px;
+        }
+        &.size-m{
+            width: 120px;
+            padding: 12px 8px;
+        }
+    }
+    .content{
+        h3{
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+        p{
+            font-size: 1.4rem;
+            line-height: 2.6rem;
+            margin-top: 10px;
+        }
     }
 }
