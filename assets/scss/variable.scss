@@ -112,6 +112,37 @@ button{
         margin-top: 20px;
     }
 }
+.nav{
+    position: fixed;
+    top:0;
+    right: 0;
+
+    width: 50vw;
+    height: 100vh;
+    padding-top: 80px;
+
+    background-color: var(--white-cl);
+
+    transform: translateX(100%);
+    transition: .3s linear;
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            width: 100%;
+            text-align: center;
+            a{
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
+    }
+    &.active{
+        transform: translateX(0);
+        transition: .3s linear;
+    }
+}
 
 @media (max-width: 1199px){
     :root{
@@ -143,8 +174,38 @@ button{
         }
         p{
             font-size: 1.4rem;
-            line-height: 2.6rem;
+            line-height: 2rem;
             margin-top: 10px;
+        }
+    }
+}
+@media (max-width: 767px){
+    :root{
+        --container-width: 540px;
+        --section-pd: 30px;
+    }
+    svg.brand-logo{
+        width: 80px;
+    }
+    button{
+        width: 60px;
+        padding: 4px;
+        &.primary{
+            width: 70px;
+        }
+        &.size-m{
+            width: 120px;
+            padding: 8px;
+        }
+    }
+    .content{
+        h3{
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.8rem;
         }
     }
 }

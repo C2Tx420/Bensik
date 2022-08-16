@@ -38,4 +38,31 @@
             height: 100%;
         }
     }
+    @media (max-width: 991px){
+        overflow-x: hidden;
+        .container{
+            gap: 0;
+        }
+        &__content{
+            min-width: 44%;
+            margin-left: 40px;
+            h3{
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+            }
+            p{
+                font-size: 1.4rem;
+                line-height: 2rem;
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+        }
+        &__img{
+            height: 350px;
+            flex-shrink: unset;
+        }
+    }
+    @media (max-width: 767px){
+        display: none;
+    }
 }

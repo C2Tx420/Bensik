@@ -48,4 +48,16 @@
             }
         }
     }
+    @media (max-width: 767px){
+        .sale-type{
+            margin: 30px 30px 18px 30px;
+            flex-direction: column;
+            gap: 20px;
+            &__item{
+                &-img{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }

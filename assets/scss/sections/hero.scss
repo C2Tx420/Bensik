@@ -1,26 +1,29 @@
-.hero{
+.hero {
     background: var(--bg-cl);
     padding-top: 40px;
 
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / .3);
     -webkit-box-shadow: 0px 4px 4px 0px rgb(0 0 0 / .3);
     -moz-box-shadow: 0px 4px 4px 0px rgb(0 0 0 / .3);
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 67px;
     }
-    &__left{
-        &-content{
-            .sub-heading{
+
+    &__left {
+        &-content {
+            .sub-heading {
                 font-size: 1.8rem;
                 font-weight: 500;
                 line-height: 2.7rem;
                 letter-spacing: 1%;
                 color: var(--sub-text-cl);
             }
-            .heading{
+
+            .heading {
                 margin-top: 8px;
                 margin-bottom: 30px;
 
@@ -29,7 +32,8 @@
                 line-height: 7.6rem;
                 color: var(--main-text-cl);
             }
-            .sub{
+
+            .sub {
                 font-size: 1.8rem;
                 line-height: 3.2rem;
 
@@ -39,58 +43,89 @@
             }
         }
     }
-    &__right{
+
+    &__right {
         flex-shrink: 0;
         width: 584px;
         margin-right: -100px;
-        img{
+
+        img {
             width: 100%;
         }
     }
-}
-@media (max-width: 1599px){
-    .hero{ 
-        .container{
+
+    @media (max-width: 1599px) {
+        .container {
             justify-content: unset;
-            gap:0;
+            gap: 0;
         }
-        &__left{
+
+        &__left {
             width: 50%;
-            &-content{
-                .heading{
+
+            &-content {
+                .heading {
                     font-size: 5rem;
                     line-height: 6rem;
                 }
             }
         }
-        &__right{
+
+        &__right {
             width: 50%;
         }
     }
-}
 
-@media (max-width: 991px){
-    .hero{
-        &__left{
+    @media (max-width: 991px) {
+        &__left {
             margin-right: auto;
-            &-content{
-                .sub-heading{
+
+            &-content {
+                .sub-heading {
                     font-size: 1.6rem;
                     line-height: 100%;
                 }
-                .heading{
+
+                .heading {
                     font-size: 3.4rem;
                     line-height: 100%;
                     margin: 10px 0 20px;
                 }
-                .sub{
+
+                .sub {
                     font-size: 1.4rem;
                     line-height: 150%;
                     margin-bottom: 20px;
                 }
             }
         }
-        &__right{
+
+        &__right {
+            width: 40%;
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 767px){
+        padding-bottom: 20px;
+        &__left {
+            &-content {
+                .sub-heading {
+                    font-size: 1.2rem;
+                }
+
+                .heading {
+                    font-size: 2rem;
+                    margin: 4px 0 8px;
+                }
+
+                .sub {
+                    font-size: 1rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__right {
             width: 40%;
             margin-right: 0;
         }

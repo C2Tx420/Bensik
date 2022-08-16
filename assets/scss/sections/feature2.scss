@@ -34,8 +34,44 @@
         }
     }
     @media (max-width: 991px){
-        &_content{
-            margin-bottom: 60px;
+        &__content{
+            margin-bottom: 30px;
+            &-img{
+                transform: scale(.8);
+            }
+        }
+        &__countdown{
+            &-item{
+                &-amount{
+                    font-size: 4rem;
+                    line-height: 4rem;
+                    margin-bottom: 10px;
+                }
+                &-name{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px){
+        &__content{
+            margin-bottom: 40px;
+            flex-direction: column;
+        }
+        &__countdown{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            &-item{
+                width: calc(100% / 2 - 10px);
+                &-amount{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+                &-name{
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }
